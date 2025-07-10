@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSS - DEV</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional UX/UI Designer and Photographer creating beautiful and functional digital experiences. Specialized in branding, web design, and creative photography.">
+    <meta name="keywords" content="UX Designer, UI Designer, Photographer, Web Design, Branding, Portfolio">
+    <meta name="author" content="JOSS">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="JOSS - UX/UI Designer & Photographer">
+    <meta property="og:description" content="Professional UX/UI Designer and Photographer creating beautiful digital experiences">
+    <meta property="og:image" content="./images/hero-image.png">
+    <meta property="og:url" content="https://joss-portfolio.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="JOSS Portfolio">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JOSS - UX/UI Designer & Photographer">
+    <meta name="twitter:description" content="Professional UX/UI Designer and Photographer">
+    <meta name="twitter:image" content="./images/hero-image.png">
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" href="./icons/icon-192x192.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+    
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "JOSS",
+        "jobTitle": "UX/UI Designer & Photographer",
+        "description": "Professional UX/UI Designer and Photographer creating beautiful and functional digital experiences",
+        "url": "https://joss-portfolio.com",
+        "sameAs": [
+            "https://instagram.com/joss",
+            "https://behance.net/joss",
+            "https://dribbble.com/joss"
+        ],
+        "knowsAbout": ["UX Design", "UI Design", "Photography", "Branding", "Web Design"],
+        "workLocation": "Remote"
+    }
+    </script>
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">JOSS</div>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link" data-translate="nav.about">about</a>
+                <a href="#work" class="nav-link" data-translate="nav.work">work</a>
+                <a href="#contact" class="nav-link" data-translate="nav.contact">contact</a>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                </div>
+            </div>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-image">
+            <img src="gradient.png" alt="JOSS - UX/UI Designer & Photographer" loading="eager">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-translate="hero.title">JOSS</h1>
+            <p class="hero-subtitle" data-translate="hero.subtitle"></p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/joss_0700/" target="_blank" rel="noopener noreferrer" class="social-link instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="red" stroke-width="2" viewBox="0 0 24 24" width="24" height="24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="17.5" cy="6.5" r="1.5"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/josssdev" target="_blank" rel="noopener noreferrer" class="social-link behance">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="2" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 1C5.925 1 1 5.925 1 12a11 11 0 007.5 10.45c.55.1.75-.25.75-.55v-2.05c-3.05.65-3.7-1.45-3.7-1.45-.5-1.2-1.25-1.5-1.25-1.5-1-.7.05-.7.05-.7 1.1.05 1.7 1.1 1.7 1.1 1 .1 1.55-.75 1.75-1.15.1-.6.4-1 .75-1.2-2.45-.3-5.05-1.2-5.05-5.35 0-1.2.45-2.15 1.15-2.9-.15-.3-.5-1.5.1-3.1 0 0 .95-.3 3.1 1.15.9-.25 1.85-.4 2.8-.4s1.9.15 2.8.4c2.15-1.45 3.1-1.15 3.1-1.15.6 1.6.25 2.8.1 3.1.7.75 1.15 1.7 1.15 2.9 0 4.15-2.6 5.05-5.1 5.35.4.35.8 1.05.8 2.15v3.15c0 .3.2.65.75.55A11 11 0 0023 12c0-6.075-4.925-11-11-11z"/>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title" data-translate="about.title">hi, i'm joss!</h2>
+                    <p class="about-description" data-translate="about.description1">
+                        Soy Jose Gutierrez, desarrollador y diseñador con más de 2 años de experiencia creando aplicaciones móviles y páginas web. Me especializo en React, React Native, HTML, CSS, JavaScript y Diseño Grafico. Siempre enfocándome en la experiencia de usuario y el diseño funcional. Me encanta transformar ideas en soluciones digitales simples y efectivas. Explora mis proyectos y conéctate si buscas innovación y calidad.
+                    </p>
+                    <a href="cv.pdf" download class="cv-download-button"><button class="btn btn-primary" data-translate="about.download">Download CV</button></a>
+                </div>
+                <div class="about-image">
+                    <div class="profile-card">
+                        <img src="jd.png" alt="JOSS profile" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label" data-translate="stats.projects">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-label" data-translate="stats.clients">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label" data-translate="stats.experience">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <div class="skills-grid">
+                <div class="skills-content">
+                    <h3 class="section-title" data-translate="skills.title">what am i doing and how can i help you?</h3>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <h4 data-translate="skills.branding">Diseño de marca</h4>
+                            <ul>
+                                <li>• Diseño de logotipo</li>
+                                <li>• Identidad de marca</li>
+                                <li>• Guía visual</li>
+                                <li>• Estrategia de marca</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <h4 data-translate="skills.copywriting">Redacción creativa</h4>
+                            <p>Creación de contenido creativo y atractivo</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <h4 data-translate="skills.ecommerce">Comercio electrónico</h4>
+                            <p>Diseño y optimización de tiendas online</p>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <h4 data-translate="skills.website">Sitio web nuevo</h4>
+                            <p>Diseño y desarrollo completo de sitios web</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-info">
+                    <p>Creo sitios web y aplicaciones estéticos y creativos para empresas que muestran la singularidad de su marca.</p>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">React Native</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">Kotlin</span>
+                        <span class="tech-badge">GitHub</span>
+                        <span class="tech-badge">Spark AR</span>
+                        <span class="tech-badge">Adobe Illustrator</span>
+                        <span class="tech-badge">Adobe Photoshop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="work">
+        <div class="container">
+            <h3 class="section-title" data-translate="portfolio.title">Featured Work</h3>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="MED ALLY.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Med Ally</h4>
+                        <p>Plataforma digital que facilita el acceso a información médica confiable.</p>
+
+                    <button class="cssbuttons-io">
+                     <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                       <path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"fill="currentColor"></path>
+                        </svg>
+                          View</span>
+                    </button>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="FHC.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Flashcards</h4>
+                        <p>Herramienta interactiva para crear, estudiar y compartir tarjetas de estudio personalizables en diversas materias.</p>
+
+                    <button class="cssbuttons-io">
+                     <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                       <path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"fill="currentColor"></path>
+                        </svg>
+                          View</span>
+                    </button>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="Consultorio.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Consultorio Medico Familiar Adulam</h4>
+                        <p>Centro de salud dedicado al cuidado integral de familias, con un enfoque en la prevención y el bienestar.</p>
+
+                    <button class="cssbuttons-io">
+                     <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                       <path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"fill="currentColor"></path>
+                        </svg>
+                          View</span>
+                    </button>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="Arepas.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Arepa Colombianas</h4>
+                        <p>Tienda en línea que ofrece arepas auténticas, con opciones de compra fáciles y seguras para disfrutar del auténtico sabor colombiano.</p>
+
+                    <button class="cssbuttons-io">
+                     <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                       <path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"fill="currentColor"></path>
+                        </svg>
+                          View</span>
+                    </button>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="DocsDev.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>DocsDev</h4>
+                        <p>DocsDev (Documentos para Desarrolladores) una herramientas para desarrolladores: Una plataforma o servicio que provee documentación, recursos, o herramientas útiles para el desarrollo de software.</p>
+                        
+                    <button class="cssbuttons-io">
+                     <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                       <path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"fill="currentColor"></path>
+                        </svg>
+                          View</span>
+                    </button>
+
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h3 class="section-title white" data-translate="contact.title">Let's work together</h3>
+            <p class="contact-description" data-translate="contact.description">
+                I constantly strive to improve my skills and the quality of my work. Ready to bring your vision to life with exceptional design.
+            </p>
+            <div class="contact-buttons">
+                <a href="https://www.instagram.com/joss_0700/"><button class="btn btn-outline" data-translate="contact.button1">Get in touch</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 JOSS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
